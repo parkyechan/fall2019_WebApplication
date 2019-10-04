@@ -4,3 +4,9 @@ body{
 h1{
   font-size : 40pt;
 }
+dl{
+  font-size: 70%;
+}
+dt{
+  font-weight:bold;
+}
