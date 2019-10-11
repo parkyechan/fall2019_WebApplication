@@ -56,6 +56,9 @@ div#sidebar {
   background-color: #3366CC;
   float: left;
 }
+.e * *:not(div):hover{
+  background-color: #A6CE39;
+}
 /* .asd{
   float: right;
 } */
