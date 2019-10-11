@@ -8,12 +8,15 @@ img.headericon {
 img{
   overflow: hidden;
 }
+.maintext{
+  text-align: right;
+}
 .ff{
   float: right;
   overflow: hidden;
 }
 .a {
-    text-align:right;
+    /* text-align:right; */
         border: 5px none red;
         padding: 5px;
         background-color:#1D2475;
@@ -41,6 +44,17 @@ img{
         background-color: white;
         margin-right:10%;
         margin-left:10%;
+}
+.hi{
+  margin-left: 180px;
+}
+div#sidebar {
+  margin-top: 15px;
+  margin-right: 10px;
+  border: 4px solid #1D2475;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #3366CC;
+  float: left;
 }
 /* .asd{
   float: right;
