@@ -1,0 +1,19 @@
+body{
+  background-image: url("background.png");
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0px; <!-- 이게 맞나? Ex1 - 5번 -->
+}
+.center {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+
+  background-repeat: repeat-x;
+}
+/* Ex2의 Image Banner 부분 안함*/
+h1{
+  font-size: 24pt;
+  text-shadow: 3px 3px #999999;
+  text-align: center;
+  font-family: Tahoma, Verdana, sans-serif;
+}
