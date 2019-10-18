@@ -8,10 +8,11 @@ body{
     background-repeat: repeat;
 }
 .center{
-    width: 800x;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     height: 50px;
+    display: block;
 }
 /* Ex2의 Image Banner 부분 안함*/
 h1{
@@ -59,11 +60,25 @@ h1{
     width: 550px;
 }
 .content {
+
+}
+.content p{
+    padding: 8px;
+}
+.content img{
+    padding: 5px
+}
+.content p:first-child{
+    margin-top: 8px;
     background-color: #E8DC9B;
     border: 2px solid gray;
     border-radius: 10px;
     font-size: 8pt;
-    
+    font-weight: bold;
+    overflow: hidden;
+}
+.content p:last-child{
+    margin-bottom: 20px
 }
 .leftside{
     width:250px;
@@ -74,8 +89,19 @@ h1{
     line-height:10pt;
 }
 .bottom{
-    
+/*    background-color: #A2B964;*/
+    float: 
 }
 .content img{
     float: left
+}
+.leftside dl{
+    margin: 10pt 10pt 10pt 10pt;
+    font-weight: bold;
+}
+.validator{
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
 }
