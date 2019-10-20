@@ -49,6 +49,6 @@ body{
     font-weight: bold;;
 }
 
-body * *:not(div):hover{
+body * * *:not(div):hover{
   background-color: #A6CE39;
 }
