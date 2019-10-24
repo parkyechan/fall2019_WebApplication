@@ -41,6 +41,7 @@ h1{
     color: red;
     background-image: url("rbg.png");
     height: 83px;
+    vertical-align: top;
 }
 .rottenimg{
     vertical-align: top;
@@ -78,9 +79,16 @@ h1{
     float: left;
 }
 .bottom{
-    margin-bottom: 0px;
-    height: 10px;
-    
+    background-color: #A2B964;
+    overflow: hidden;
+}
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.maincontent{
+    width: 800px;
+    overflow: hidden;
 }
 .review{
     padding-bottom: 20pt;
@@ -114,4 +122,10 @@ ul{
     margin: 0;
     padding: 0;
 
+}
+.w3c{
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+    position: fixed;
 }
