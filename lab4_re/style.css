@@ -82,9 +82,10 @@ h1{
     background-color: #A2B964;
     overflow: hidden;
 }
+.bottom p{
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+/*    padding-top: 5px;*/
+/*    padding-bottom: 5px;*/
 }
 .maincontent{
     width: 800px;
