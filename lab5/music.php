@@ -12,23 +12,45 @@
 		<h1>My Music Page</h1>
 		
 		<!-- Ex 1: Number of Songs (Variables) -->
+        <?php
+            $song_count = 1234;
+        ?>
 		<p>
 			I love music.
-			I have 1234 total songs,
-			which is over 123 hours of music!
+			I have <?=$song_count?> total songs,
+			which is over <?=(int)($song_count/10)?> hours of music!
 		</p>
 
 		<!-- Ex 2: Top Music News (Loops) -->
+        
+        
 		<!-- Ex 3: Query Variable -->
 		<div class="section">
 			<h2>Billboard News</h2>
-		
+		      
 			<ol>
-			    <li><a href="https://www.billboard.com/archive/article/201910">2019-11</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201910">2019-10</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201909">2019-09</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201908">2019-08</a></li>
-				<li><a href="https://www.billboard.com/archive/article/201907">2019-07</a></li>
+                <?php
+                $news_pages = 5;
+                if (isset($_GET["newspages"])) {
+                    $news_pages = $_GET["newspages"];
+                }
+    
+                for ($i = 0; $i < $news_pages; $i++) {
+                    $month = 11 - $i;
+                    if ($month <= 0) {
+                        $month = 12 - (-1 * $month % 12);
+                    }
+                    if ($month < 10) {
+                        $month = '0' . $month;
+                    }
+                    if (11 - $i > 0) {
+                        $year = 2019;
+                    } else {
+                        $year = 2018 - (int)(-1 * (11 - $i) / 12);
+                    }
+            ?>
+            <li><a href="https://www.billboard.com/archive/article/<?= "{$year}{$month}" ?>"><?= "{$year}-{$month}" ?></a></li>
+            <?php } ?>
 			</ol>
 		</div>
 
@@ -45,6 +67,9 @@
 		</div>
 		
 		<!-- Ex 6: Music (Multiple Files) -->
+        <?php
+        $songs = glob("lab5/musicPHP/songs/*.mp3");
+    ?>
 		<!-- Ex 7: MP3 Formatting -->
 		<div class="section">
 			<h2>My Music and Playlists</h2>
