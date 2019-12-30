@@ -56,8 +56,8 @@
 		
 		<!-- Ex 2: display submitted data -->
 		<ul> 
-			<li>Name: </li>
-			<li>ID: </li>
+			<li>Name: <?=$_POST["name"] ?></li>
+			<li>ID: <?=$_POST["id"] ?></li>
 			<!-- use the 'processCheckbox' function to display selected courses -->
 			<li>Course: </li>
 			<li>Grade: </li>
